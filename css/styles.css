@@ -2,9 +2,8 @@
   --accent-color: #2196f3;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
-  --main-font: 'Roboto', sans-serif;
-  --main-font-weight: 400;
-  --title-font-weight: 700;
+  --white-color: #ffffff;
+  --filter-button-bgc: #f5f4fa;
 }
 
 * {
@@ -14,15 +13,17 @@
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 400;
+  color: var(--primary-text-color);
 }
 
-ul {
+.list {
   list-style: none;
 }
 
-a {
+.link {
   color: inherit;
   text-decoration: none;
 }
@@ -31,3 +32,180 @@ a {
   width: 1600px;
   margin: 0 auto;
 }
+
+.hidden-title {
+  visibility: hidden;
+}
+
+/* ХЕДЕР */
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.blue-logo {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.nav-list,
+.contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+}
+
+.contacts-list {
+  color: var(--secondary-text-color);
+}
+
+.nav-list-item:hover,
+.nav-list-item:focus,
+.contacts-list-item:hover,
+.contacts-list-item:focus,
+.address-list-item:hover,
+.address-list-item:focus {
+  color: var(--accent-color);
+}
+
+/* СТУДИЯ */
+
+/* герой */
+.container.hero {
+  background-color: rgb(0, 0, 0);
+}
+
+.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.order-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* наши преимущества */
+
+.container-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.benefits-list {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.benefits-list-title {
+  font-weight: 700;
+  line-height: 1.143;
+  text-transform: uppercase;
+}
+
+.benefits-list-description {
+  line-height: 1.714;
+  color: var(--secondary-text-color);
+}
+
+/* наша команда */
+
+.employee-item {
+  font-size: 16;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.employee-name {
+  font-weight: 500;
+}
+
+.employee-position {
+  color: var(--secondary-text-color);
+}
+/* наша команда */
+
+/* ФУТЕР */
+
+.footer {
+  background-color: rgb(0, 0, 0);
+}
+
+.footer .logo {
+  color: var(--white-color);
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.post-address {
+  color: var(--white-color);
+}
+
+.address-list {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ФУТЕР */
+
+/* ПОРТФОЛІО */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+  border: none;
+  background-color: var(--filter-button-bgc);
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.example-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example-type {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* ПОРТФОЛІО */
