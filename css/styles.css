@@ -31,7 +31,6 @@ body {
 }
 
 .container {
-  width: 1600px;
   margin: 0 auto;
 }
 
@@ -78,12 +77,12 @@ body {
   color: var(--secondary-text-color);
 }
 
-.nav-list-item:hover,
-.nav-list-item:focus,
-.contacts-list-item:hover,
-.contacts-list-item:focus,
-.address-list-item:hover,
-.address-list-item:focus {
+.nav-list-link:hover,
+.nav-list-link:focus,
+.contacts-list-link:hover,
+.contacts-list-link:focus,
+.address-list-link:hover,
+.address-list-link:focus {
   color: var(--accent-color);
 }
 
@@ -173,7 +172,7 @@ body {
 /* ФУТЕР */
 
 .footer {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--bgc-hero);
 }
 
 .footer .logo {
@@ -194,6 +193,7 @@ body {
 .address-list {
   color: rgba(255, 255, 255, 0.6);
 }
+
 /* ФУТЕР */
 
 /* ПОРТФОЛІО */
@@ -212,6 +212,10 @@ body {
 .filter-button:hover,
 .filter-button:focus {
   color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.filter-button.all {
   background-color: var(--accent-color);
 }
 
