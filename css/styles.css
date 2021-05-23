@@ -3,7 +3,9 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --white-color: #ffffff;
-  --filter-button-bgc: #f5f4fa;
+  --bgc-hero: #2f303a;
+  --bgc-hero-button-hover: #188ce8;
+  --bgc-buttons-section: #f5f4fa;
 }
 
 * {
@@ -33,14 +35,24 @@ body {
   margin: 0 auto;
 }
 
-.hidden-title {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* ХЕДЕР */
 
 .logo {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -79,7 +91,7 @@ body {
 
 /* герой */
 .container.hero {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--bgc-hero);
 }
 
 .hero {
@@ -107,6 +119,10 @@ body {
   cursor: pointer;
 }
 
+.order-button:hover {
+  background-color: var(--bgc-hero-button-hover);
+}
+
 /* наши преимущества */
 
 .container-title {
@@ -121,18 +137,22 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-.benefits-list-title {
+.benefits-title {
   font-weight: 700;
   line-height: 1.143;
   text-transform: uppercase;
 }
 
-.benefits-list-description {
+.benefits-description {
   line-height: 1.714;
   color: var(--secondary-text-color);
 }
 
 /* наша команда */
+
+.employee {
+  background-color: var(--bgc-buttons-section);
+}
 
 .employee-item {
   font-size: 16;
@@ -185,7 +205,7 @@ body {
   letter-spacing: 0.03em;
   color: inherit;
   border: none;
-  background-color: var(--filter-button-bgc);
+  background-color: var(--bgc-buttons-section);
   cursor: pointer;
 }
 
